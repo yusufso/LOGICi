@@ -1,4 +1,4 @@
-# AndI
+# LOGICi
 
 
 Each neuron takes in an input, multiplies by a weight, a proportional constant, and outputs the result. It can have multiple weights. The number of weights equals the number of neurons in the upcoming layer. Each weight is associated with a neuron of the upcoming layer. So if a neuron connects to 3 neurons, a, b and c, in the upcoming layer, it will multiply its input with a specific weight for a and output the result to a, a specific weight for b and output the result to b and a specific weight for c and output the result to c.
