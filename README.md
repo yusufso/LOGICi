@@ -22,16 +22,19 @@ There is one more thing you can do to increase accuracy, biases. You can add a c
 
 
 
+  A          X    =    y
+
+Inputs       X       Outputs
+0 0 1        x1         0
+1 1 1        x2         1
+1 0 1        x3         1
+0 1 1        x4         0
+
 
 Training process:
 1. Assign random weights to neurons.
-2. Take random inputs through the network to get training output
-2. Calculate error, error is a comparison of training output and actual output
-3. Depending on size of error, adjust weights respectively
-4. Repeat as much as possible
-
-Adjust weight by: error * input * derivative of sigmoid normalization function
-
-error = setPoint - output
-
-input = 0 or 1
+2. Take random inputs through the network to get actual output.
+2. Calculate error, error = training output - actual output
+3. Depending on size of error, adjust weights. We use the following function
+      AdjustBy = error * derivative of sigmoidNormalization(actual outputs)
+4. Repeat as much as possible (This does 30,000 times)
